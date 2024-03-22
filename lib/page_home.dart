@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:huu_loc63130680_flutter/commercial_app/home_page_store.dart';
 import 'package:huu_loc63130680_flutter/profile/thuchanh/page_profile_th.dart';
 
 class PageHome extends StatelessWidget {
@@ -16,6 +17,7 @@ class PageHome extends StatelessWidget {
           child: Column(
             children: [
               _buildButton(context, label:"My Profile", destination: MyProfile()),
+              _buildButton(context, label: "Fruit Store", destination: AppFruitStore())
             ],
           ),
         ),
