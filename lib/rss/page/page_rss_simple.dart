@@ -63,26 +63,33 @@ class PageRssSimple extends StatelessWidget {
                  children: [
                    GestureDetector(
                      onTap: () {
-                       // Get.to(MyWebPage(
-                       //     url: rss.link!,
-                       //     nameResource: SimpleControllerRss.instance.resourceName,
-                       // ));
+                       Get.to(MyWebPage(
+                           url: rss.link!,
+                           nameResource: SimpleControllerRss.instance.resourceName,
+                       ));
                      },
                      child: Row(
                        children: [
                          Expanded(
                            flex: 1,
-                           child: Image(
-                               image: NetworkImage("${rss.imageUrl}"),
+                           child: Padding(
+                             padding: const EdgeInsets.all(8.0),
+                             child: Image(
+                                 image: NetworkImage("${rss.imageUrl}"),
+                             ),
                            ),
                          ),
                          Expanded(
                               flex: 2,
-                             child: Text("${rss.title}")
+                             child: Padding(
+                               padding: const EdgeInsets.all(8.0),
+                               child: Text("${rss.title}",style: TextStyle(color: Colors.blue),),
+                             )
                          ),
                        ],
                      ),
                    ),
+                   SizedBox(height: 15,),
                    Text("${rss.description}")
                  ],
                );
