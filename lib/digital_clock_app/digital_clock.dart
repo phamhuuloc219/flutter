@@ -10,7 +10,7 @@ class DigitalClock extends StatefulWidget {
 }
 
 class _DigitalClockState extends State<DigitalClock> {
-  late String clock;
+  String? clock;
 
   @override
   void initState() {

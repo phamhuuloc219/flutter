@@ -41,6 +41,7 @@ class _MyWebPageState extends State<MyWebPage> {
           },
         ),
       )
+      //..loadRequest(Uri.parse('https://vnexpress.net/'));
       ..loadRequest(Uri.parse('https://vnexpress.net/'));
   }
 }

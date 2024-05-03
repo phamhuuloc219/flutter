@@ -21,6 +21,8 @@ dependencies:
   xml2json: ^6.2.3
   http: ^1.2.0
   webview_flutter: ^4.7.0
+  firebase_storage: ^11.6.9
+  cloud_firestore: ^4.15.8
 
 dev_dependencies:
   flutter_test:
