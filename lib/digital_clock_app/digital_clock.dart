@@ -10,7 +10,7 @@ class DigitalClock extends StatefulWidget {
 }
 
 class _DigitalClockState extends State<DigitalClock> {
-  String? clock;
+  String clock= "";
 
   @override
   void initState() {
@@ -34,7 +34,7 @@ class _DigitalClockState extends State<DigitalClock> {
         child: Container(
           child: Text(
             "$clock",
-            style: TextStyle(fontSize: 30),
+            style: TextStyle(fontSize: 50),
           ),
         ),
       ),
