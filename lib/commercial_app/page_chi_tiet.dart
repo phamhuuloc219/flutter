@@ -24,45 +24,47 @@ class PageChiTietSP extends StatelessWidget {
         ],
 
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Center(
-              child: Container(
-                width: w,
-                child: Image.network(sp.image!),
-              ),
-            ),
-            Text(sp.ten),
-            Text("${sp.gia} vnd",style: TextStyle(color: Colors.red),),
-            Text("${sp.moTa}"),
-            Row(
-              children: [
-                RatingBar.builder(
-                  initialRating: r = Random().nextInt(21)/10.0+3,
-                  minRating: 1,
-                  maxRating: 5,
-                  direction: Axis.horizontal,
-                  allowHalfRating: true,
-                  itemCount: 5,
-                  itemSize: 30,
-                  itemPadding: EdgeInsets.symmetric(horizontal: 0.0),
-                  itemBuilder: (context, _) => Icon(
-                    Icons.star,
-                    color: Colors.amber,
-                  ),
-                  onRatingUpdate: (rating) {
-                    print(rating);
-                  },
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Center(
+                child: Container(
+                  width: w,
+                  child: Image.network(sp.image!,width: 300,height: 300,),
                 ),
-                Text("${r}",style: TextStyle(color: Colors.red),),
-                Text(" "),
-                Text("${Random().nextInt(100)} Đánh giá"),
-              ],
-            ),
-          ],
+              ),
+              Text(sp.ten),
+              Text("${sp.gia} vnd",style: TextStyle(color: Colors.red),),
+              Text("${sp.moTa}"),
+              Row(
+                children: [
+                  RatingBar.builder(
+                    initialRating: r = Random().nextInt(21)/10.0+3,
+                    minRating: 1,
+                    maxRating: 5,
+                    direction: Axis.horizontal,
+                    allowHalfRating: true,
+                    itemCount: 5,
+                    itemSize: 30,
+                    itemPadding: EdgeInsets.symmetric(horizontal: 0.0),
+                    itemBuilder: (context, _) => Icon(
+                      Icons.star,
+                      color: Colors.amber,
+                    ),
+                    onRatingUpdate: (rating) {
+                      print(rating);
+                    },
+                  ),
+                  Text("${r}",style: TextStyle(color: Colors.red),),
+                  Text(" "),
+                  Text("${Random().nextInt(100)} Đánh giá"),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
