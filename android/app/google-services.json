@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1009656017251",
+    "project_id": "huuloc-firebase",
+    "storage_bucket": "huuloc-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009656017251:android:3bfead30b87d779e842356",
+        "android_client_info": {
+          "package_name": "com.example.huu_loc63130680_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPEi8mYRZlJhSEsfy9QIphQHwEAIDPTlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009656017251:android:6c04b7778921099d842356",
+        "android_client_info": {
+          "package_name": "vn.ntu.huuloc.huuloc_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPEi8mYRZlJhSEsfy9QIphQHwEAIDPTlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
